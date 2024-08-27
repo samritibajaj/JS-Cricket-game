@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Cricket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <center>
+  <h1>Bat Ball Stump Game</h1>
+  <button id="bat" onclick="
+
+  // let randomNum=Math.random()*3;
+  // let computerChoice;
+  
+  
+   let computerChoice=generateComputerChoice();
+   let result=getResult('Bat',computerChoice);
+   showResult('Bat',computerChoice,result);
+
+// alert(`You chose bat. Computer choice is ${computerChoice}. ${result}`)
+  ">Bat</button>
+
+
+  <button onclick="  
+   computerChoice=generateComputerChoice();
+    result=getResult('Ball',computerChoice);
+    showResult('Ball',computerChoice,result)
+
+// alert(`You've chosen Ball. Computer choice is ${computerChoice}. ${result}`)
+  ">Ball</button>
+
+  <button onclick="
+    computerChoice=generateComputerChoice();
+    result=getResult('Stump',computerChoice);
+    showResult('Stump',computerChoice,result);
+
+// alert(`You chose Stump. Computer choice is ${computerChoice}. ${result}`)"
+>Stump</button>
+</center>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
